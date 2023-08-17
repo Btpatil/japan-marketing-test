@@ -785,17 +785,17 @@
   color: black;
 }
 
-.buttonoutlined6:hover .button6{
+/* .buttonoutlined6:hover .button6{
   color: black;
-}
+} */
 
 .buttonoutlined8:hover{
   background-color: #f4faff;
 }
-
+/* 
 .buttonoutlined8:hover .button6{
   color: black;
-}
+} */
 
 .frame1 {
   flex-direction: row;
@@ -864,7 +864,7 @@
 }
 
 .buttonoutlined7:hover{
-  opacity: 0.1;
+  opacity: 0.05 ;
   /* background-color: white;
   color: black; */
 }
