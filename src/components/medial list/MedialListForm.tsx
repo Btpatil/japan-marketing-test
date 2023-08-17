@@ -1,6 +1,8 @@
 import { ReactNode } from "react";
 import styles from "../../pages/K10.module.css";
 import { compatibleFuneel, targetTypeData } from "../../constants/constants";
+import { MenuItem, TextField } from "@mui/material";
+import { relative } from "path";
 
 const RowFieldName = ({ fieldName }: { fieldName: string }) => {
     return (
@@ -91,14 +93,15 @@ export const MedialListForm = () => {
                 <div className={styles.frameParent5}>
                     <RowFieldName fieldName="下限費用感" />
                     <div className={styles.frameWrapper}>
-                        <div className={styles.textFieldoutlinedParent}>
-                            <div className={styles.textFieldoutlined}>
-                                <div className={styles.input}>
-                                    <div className={styles.container1}>
-                                        <div className={styles.label18}>選択してください</div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div style={{ position: 'relative' }}>
+                            <TextField
+                                label="選択してください"
+                                variant="outlined"
+                                size="small"
+                                sx={{
+                                    width: 336
+                                }}
+                            />
                             <div className={styles.arrowdropdownfilled}>
                                 <img
                                     className={styles.vectorIcon1}
@@ -108,12 +111,37 @@ export const MedialListForm = () => {
                             </div>
                         </div>
                     </div>
+                    {/* <div className={styles.frameWrapper}> */}
+                    {/* <div className={styles.textFieldoutlinedParent}> */}
+                    {/* <div className={styles.textFieldoutlined}> */}
+                    {/* <div className={styles.input}>
+                                    <div className={styles.container1}>
+                                        <div className={styles.label18}>選択してください</div>
+                                    </div>
+                                </div> */}
+                    {/* </div> */}
+                    {/* <div className={styles.arrowdropdownfilled}>
+                        <img
+                            className={styles.vectorIcon1}
+                            alt=""
+                            src="/vector1.svg"
+                        />
+                    </div> */}
+                    {/* </div> */}
+                    {/* </div> */}
                 </div>
                 <div className={styles.frameParent12}>
                     <RowFieldName fieldName="フリーワード" />
                     <div className={styles.frameWrapper}>
                         <div className={styles.textFieldoutlined1}>
-                            <input className={styles.input1} type="text" />
+                            <TextField
+                                label="キーワードを入力"
+                                variant="outlined"
+                                size="small"
+                                sx={{
+                                    width: 336
+                                }}
+                            />
                         </div>
                     </div>
                 </div>

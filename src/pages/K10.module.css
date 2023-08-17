@@ -378,6 +378,11 @@
   gap: var(--gap-5xs);
 }
 
+/* hover effect for above buttom */
+.content:hover{
+  background-color: #f4faff;
+}
+
 .buttonoutlined,
 .unstyledbutton {
   overflow: hidden;
@@ -739,6 +744,10 @@
   justify-content: center;
 }
 
+.buttonoutlined5:hover{
+  background-color: #f4faff;
+}
+
 .button6 {
   position: relative;
   font-size: var(--material-theme-body-medium-size);
@@ -769,6 +778,23 @@
   flex-shrink: 0;
   flex-direction: column;
   justify-content: center;
+}
+
+.buttonoutlined6:hover{
+  background-color: #f4faff;
+  color: black;
+}
+
+.buttonoutlined6:hover .button6{
+  color: black;
+}
+
+.buttonoutlined8:hover{
+  background-color: #f4faff;
+}
+
+.buttonoutlined8:hover .button6{
+  color: black;
 }
 
 .frame1 {
@@ -835,6 +861,12 @@
   flex-shrink: 0;
   flex-direction: column;
   justify-content: center;
+}
+
+.buttonoutlined7:hover{
+  opacity: 0.1;
+  /* background-color: white;
+  color: black; */
 }
 
 .maskedIcon1 {
@@ -1549,6 +1581,7 @@
 .K10 {
   display: flex;
   justify-content: flex-start;
+  background-color: var(--background);
 }
 
 .headingParent {

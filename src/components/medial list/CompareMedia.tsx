@@ -247,7 +247,7 @@ const MediaCard = ({ hasAlertInfoBox, hasReleaseDateCard }: { hasAlertInfoBox: b
 
 export const CompareMedia = () => {
     return (
-        <div className={styles.frameParent13}>
+        <div className={styles.frameParent13} style={{marginBottom: '20px'}}>
             <MediaCard hasAlertInfoBox={true} hasReleaseDateCard={true} />
             <MediaCard hasAlertInfoBox={false} hasReleaseDateCard={false} />
         </div>

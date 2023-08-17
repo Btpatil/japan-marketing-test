@@ -4,6 +4,7 @@
 body {
   margin: 0;
   line-height: normal;
+  background-color: var(--background);
 }
 :root {
   /* fonts */
@@ -17,7 +18,8 @@ body {
   --material-theme-headline-small-size: 24px;
 
   /* Colors */
-  --background: #f3f3f3;
+  /* --background: #f3f3f3; */
+  --background: #f1f0f0;
   --color-whitesmoke-100: #f2f2f2;
   --white: #fff;
   --lightgray: #dbdbe0;
